@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conecta Sênior</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f7fb;
+  color:#1f2937;
+  scroll-behavior:smooth;
+  transition:.3s;
+}
+
+/* HEADER */
+
+header{
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
+  color:white;
+  padding:30px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+header h1{
+  font-size:2rem;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px;
+  color:white;
+
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1400&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  max-width:800px;
+}
+
+.hero h2{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  padding:15px 30px;
+  border-radius:10px;
+}
+
+/* SECTIONS */
+
+section{
+  padding:80px 8%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h3{
+  font-size:2.3rem;
+  margin-bottom:10px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.card h4{
+  margin-bottom:15px;
+  color:#1e3a8a;
+}
+
+.card p{
+  line-height:1.7;
+}
+
+.problems{
+  background:#dbeafe;
+}
+
+.solutions{
+  background:#f8fafc;
+}
+
+/* ABOUT */
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  border-radius:20px;
+}
+
+.about-text h4{
+  font-size:2rem;
+  margin-bottom:20px;
+}
+<!-- FUNCIONALIDADES -->
+
+<section id="funcionalidades">
+
+  <div class="section-title">
+    <h3>Funcionalidades para Idosos</h3>
+
+    <p>
+      Recursos desenvolvidos para melhorar a acessibilidade digital.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>🔊 Leitura por Voz</h4>
+
+      <p>
+        Sistemas com leitura automática auxiliam idosos
+        com dificuldades visuais.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>🔍 Zoom Inteligente</h4>
+
+      <p>
+        Ampliação dinâmica de textos e botões
+        para facilitar a navegação.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>📞 Botão de Emergência</h4>
+
+      <p>
+        Acesso rápido para ajuda e suporte familiar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>🎨 Modo Daltonismo</h4>
+
+      <p>
+        Ajuste visual adaptado para diferentes tipos
+        de percepção de cores.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DADOS -->
+
+<section class="problems">
+
+  <div class="section-title">
+
+    <h3>Inclusão Digital</h3>
+
+    <p>
+      Informações sobre idosos e tecnologia.
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>📱 Crescimento Digital</h4>
+
+      <p>
+        O uso de smartphones por idosos cresce
+        todos os anos no Brasil.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>⚠️ Dificuldades</h4>
+
+      <p>
+        Muitos aplicativos ainda possuem interfaces
+        difíceis para idosos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>🔒 Segurança</h4>
+
+      <p>
+        Golpes digitais estão entre os maiores medos
+        da terceira idade.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>💡 Acessibilidade</h4>
+
+      <p>
+        Sistemas acessíveis melhoram inclusão
+        e independência digital.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- OBJETIVOS -->
+
+<section>
+
+  <div class="section-title">
+
+    <h3>Objetivos do Projeto</h3>
+
+    <p>
+      Metas desenvolvidas neste trabalho acadêmico.
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>🎯 Inclusão</h4>
+
+      <p>
+        Promover acessibilidade digital para idosos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>📚 Educação</h4>
+
+      <p>
+        Demonstrar a importância da acessibilidade
+        em sistemas modernos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>🧠 UX/UI</h4>
+
+      <p>
+        Aplicar conceitos de experiência do usuário.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>💻 Tecnologia</h4>
+
+      <p>
+        Desenvolvimento utilizando HTML, CSS e JavaScript.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ACADÊMICO -->
+
+<section id="academico">
+
+  <div class="section-title">
+
+    <h3>Informações Acadêmicas</h3>
+
+    <p>
+      Dados do desenvolvimento do projeto.
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>👨‍🎓 Aluno</h4>
+      <p>João Pedro Faleiro</p>
+    </div>
+
+    <div class="card">
+      <h4>🏫 Instituição</h4>
+      <p>UniCEUB</p>
+    </div>
+
+    <div class="card">
+      <h4>💻 Curso</h4>
+      <p>Análise e Desenvolvimento de Sistemas</p>
+    </div>
+
+    <div class="card">
+      <h4>📖 Disciplina</h4>
+      <p>Interação Humano-Computador</p>
+    </div>
+
+    <div class="card">
+      <h4>📅 Ano</h4>
+      <p>2026</p>
+    </div>
+
+  </div>
+
+</section>
+
+/* FOOTER */
+
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:40px;
+}
+
+/* ACESSIBILIDADE */
+
+.accessibility-menu{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:9999;
+}
+
+.accessibility-menu button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:12px 15px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* CONTRASTE */
+
+.high-contrast{
+  background:black !important;
+  color:yellow !important;
+}
+
+.high-contrast section,
+.high-contrast .card,
+.high-contrast footer{
+  background:black !important;
+  color:yellow !important;
+}
+
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4,
+.high-contrast p,
+.high-contrast a{
+  color:yellow !important;
+}
+
+/* DALTONISMO */
+
+.colorblind-mode{
+  filter:contrast(1.2) saturate(0.8);
+}
+
+.colorblind-mode .btn,
+.colorblind-mode button{
+  background:#004aad !important;
+}
+
+@media(max-width:900px){
+
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  .hero h2{
+    font-size:2.3rem;
+  }
+
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <h1>Conecta Sênior</h1>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#problemas">Problemas</a>
+    <a href="#solucoes">Soluções</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h2>Tecnologia deve incluir, não excluir.</h2>
+
+    <p>
+      Projeto focado em acessibilidade digital para idosos
+      em sistemas modernos.
+    </p>
+
+    <a href="#sobre" class="btn">Explorar Projeto</a>
+
+  </div>
+
+</section>
+
+<section id="sobre">
+
+  <div class="section-title">
+    <h3>Sobre o Projeto</h3>
+  </div>
+
+  <div class="about">
+
+    <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?q=80&w=1200&auto=format&fit=crop">
+
+    <div class="about-text">
+
+      <h4>Inclusão Digital</h4>
+
+      <p>
+        Muitos idosos possuem dificuldades ao utilizar aplicativos
+        modernos devido à complexidade das interfaces atuais.
+      </p>
+
+      <p>
+        O Conecta Sênior busca criar experiências digitais mais simples,
+        intuitivas e acessíveis.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="problems" id="problemas">
+
+  <div class="section-title">
+    <h3>Principais Dificuldades</h3>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>👁️ Visibilidade</h4>
+      <p>Fontes pequenas e baixo contraste.</p>
+    </div>
+
+    <div class="card">
+      <h4>🧠 Complexidade</h4>
+      <p>Muitos menus e excesso de informação.</p>
+    </div>
+
+    <div class="card">
+      <h4>🔒 Segurança</h4>
+      <p>Medo de golpes e autenticações difíceis.</p>
+    </div>
+
+    <div class="card">
+      <h4>📱 Navegação</h4>
+      <p>Ícones difíceis e excesso de funções.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="solutions" id="solucoes">
+
+  <div class="section-title">
+    <h3>Soluções Propostas</h3>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>🔍 Fonte Adaptável</h4>
+      <p>Aumento dinâmico da fonte.</p>
+    </div>
+
+    <div class="card">
+      <h4>🎨 Daltonismo</h4>
+      <p>Modo visual adaptado para cores acessíveis.</p>
+    </div>
+
+    <div class="card">
+      <h4>🛡️ Alto Contraste</h4>
+      <p>Maior legibilidade para baixa visão.</p>
+    </div>
+
+    <div class="card">
+      <h4>🔊 Voz</h4>
+      <p>Assistente por voz simplificado.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>© 2026 - Conecta Sênior</p>
+  <p>João Pedro Faleiro - UniCEUB</p>
+
+</footer>
+
+<!-- BOTÕES -->
+
+<div class="accessibility-menu">
+
+  <button onclick="increaseFont()">A+</button>
+
+  <button onclick="decreaseFont()">A-</button>
+
+  <button onclick="toggleContrast()">Contraste</button>
+
+  <button onclick="toggleColorBlind()">Daltonismo</button>
+
+</div>
+
+<script>
+
+let currentSize = 16;
+
+function increaseFont(){
+
+  currentSize += 2;
+
+  document.body.style.fontSize = currentSize + "px";
+}
+
+function decreaseFont(){
+
+  if(currentSize > 12){
+
+    currentSize -= 2;
+
+    document.body.style.fontSize = currentSize + "px";
+  }
+}
+
+function toggleContrast(){
+
+  document.body.classList.toggle("high-contrast");
+}
+
+function toggleColorBlind(){
+
+  document.body.classList.toggle("colorblind-mode");
+}
+
+</script>
+
+</body>
+</html>
